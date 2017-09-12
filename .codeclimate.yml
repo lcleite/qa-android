@@ -1,0 +1,11 @@
+languages:
+ - Java
+
+ratings:
+  paths:
+  - "**.java"
+  
+exclude_paths:
+  - "app/src/test"
+  - "app/src/androidTest"
+
