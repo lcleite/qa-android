@@ -22,5 +22,7 @@ before_install:
 script: ./gradlew testRelease assembleRelease
 
 after_success:
+  - ./gradlew jacocoTestReport
+  - ./gradlew connectedCheck
   - bash <(curl -s https://codecov.io/bash)
 
